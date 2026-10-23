@@ -2,76 +2,84 @@
 
 A diploma project at Astana IT University.
 
-We are building a web platform where university students can learn from each other by exchanging skills. For example, someone who knows Python and wants to practise English could find a student who offers English practice and wants help with Python.
+Student Skill Exchange is a web platform where university students can teach skills they know and find peers who can teach skills they want to learn. The MVP focuses on profiles, offered and desired skills, partner discovery, reciprocal matching, and exchange requests.
 
 **Diploma topic:** Development of a Peer-to-Peer Skill Exchange Platform for University Students.
 
-## Why we are building this
+## Project scope
 
-We want to explore whether students can find learning partners more easily when they can see what others know and what they want to learn.
+The MVP is designed to let students:
 
-Our starting assumption is that finding a suitable person through student chats can take time, especially when both people want something in return. We still need to check this through conversations with students before treating it as an established problem.
+- create an account and maintain a profile;
+- list skills they can teach and skills they want to learn;
+- search for students by skill;
+- receive reciprocal partner suggestions;
+- send, accept, decline, cancel, and complete exchange requests;
+- agree on the topic, time, and format of an exchange.
 
-## Who it is for
-
-University students who want to share what they know and learn something new from their peers.
-
-## What we plan to build
-
-The first version will let students:
-
-- Create an account and fill out a profile.
-- List skills they can teach and skills they want to learn.
-- Search for other students by skill.
-- See suggested partners with matching learning interests.
-- Send and respond to exchange requests.
-- Agree on the topic, time, and format of an exchange.
-
-We will keep the first version focused on finding a partner and arranging an exchange. Built-in video calls, payments, a mobile app, and machine learning are outside its scope.
-
-## Our goal
-
-By the end of the project, we aim to have a working web application that supports the full journey from registration to an agreed exchange.
-
-We will test the main user flows and evaluate how well the matching approach helps students find suitable partners. The project will also include API documentation and instructions for using the platform.
+Built-in video calls, payments, a mobile application, and machine-learning recommendations are outside the MVP scope.
 
 ## Team
 
-We are two Software Engineering students from group SE-2413:
+The team consists of two Software Engineering students from group SE-2413:
 
-- **Makhmutov Nursultan** — Backend, database, API, authentication, and partner matching.
-- **Burlibaev Tamir** — User flows, interface design, frontend, and API integration.
+- **Makhmutov Nursultan** — backend, database, API, authentication, and partner matching;
+- **Burlibaev Tamir** — user flows, interface design, frontend, and API integration.
 
-We will work together on research, requirements, testing, and the final report. Tasks and repository history will show each person's contribution.
+Research, requirements, testing, project planning, and the final report are shared responsibilities.
 
 **Supervisor:** Latuta Konstantin
 
-## Where we are now
-
-We are at the beginning of the project. We have outlined the idea and our responsibilities; development has not started yet.
-
-Our next steps are to talk to potential users, review relevant research and existing platforms, define the requirements, and prepare the architecture and interface prototype.
-
 ## Technology stack
 
-The first version will use:
+- **Frontend:** React, TypeScript, and Vite
+- **Backend:** Node.js, Express, and TypeScript
+- **Database:** PostgreSQL
+- **Interface:** REST-style JSON API over HTTPS
+- **API contract:** OpenAPI
 
-- **Frontend:** React with TypeScript and Vite.
-- **Backend:** Node.js with Express and TypeScript.
-- **Database:** PostgreSQL.
-- **Frontend–backend communication:** a REST-style JSON API over HTTPS.
-- **API contract and documentation:** OpenAPI.
+The rationale, alternatives, trade-offs, and decision triggers are documented in the [technology comparison](docs/architecture/technology-comparison.md).
 
-This stack keeps the frontend and backend independently deployable, uses one language across the application, and provides relational constraints and transactions for users, skills, and exchange requests. Real-time communication is not included because chat is outside the first-version scope.
+## Project documentation
 
-The alternatives, trade-offs, security responsibilities, and decision triggers are documented in the [technology comparison](docs/architecture/technology-comparison.md).
+### Proposal and research
 
-## Documentation and tasks
+- [Project proposal](docs/project-proposal.md)
+- [Student interviews and survey findings](docs/research/user-interviews.md)
+- [Literature review](docs/research/literature-review.md)
+- [Existing systems comparison](docs/research/existing-systems-comparison.md)
 
-We will add research, requirements, diagrams, and prototype materials to this repository as they are prepared.
+### Requirements, architecture, and prototype
+
+- [Functional and non-functional requirements](docs/requirements.md)
+- [Technology comparison](docs/architecture/technology-comparison.md)
+- [System architecture](docs/architecture/system-architecture.md)
+- [System context diagram](docs/diagrams/system-context.png)
+- [Use-case diagram](docs/diagrams/use-case.png)
+- [Component diagram](docs/diagrams/component-diagram.png)
+- [UI prototype package](SSE-8_UI_Prototype.zip)
+
+Editable Draw.io sources are stored in [`docs/diagrams`](docs/diagrams/).
+
+### Verification, planning, and supervision
+
+- [Verification and evaluation plan](docs/testing/verification-and-evaluation-plan.md)
+- [Project plan, responsibilities, and risks](docs/planning/project-plan-and-risks.md)
+- [Supervisor feedback and revisions](docs/supervision/supervisor-feedback.md)
+
+### Pre-defense materials
+
+- [Pre-defense report](docs/submission/student-skill-exchange-pre-defense-report.pdf)
+- [YouTrack board and task screenshots](docs/submission/youtrack-board-and-tasks.pdf)
+- [Submission checklist and form data](docs/submission/submission-checklist.md)
+
+## Project tracking
 
 - [YouTrack task board](https://student-skill-exchange.youtrack.cloud/agiles/204-1/current)
+- [GitHub repository](https://github.com/HashiraOfSun/student-skill-exchange)
 
-## Running the project
+## Current status and limitations
 
-There is no runnable application yet. Setup and testing instructions will be added when the first implementation is ready.
+The proposal, research, requirements, architecture, UI prototype, verification plan, project plan, risk register, and supervisor feedback record are complete. The current repository contains documentation and prototype materials.
+
+A runnable web application has not been implemented yet. The tests in the verification plan are planned tests, and no implementation test results are claimed. Submission of the university form, storage of its confirmation, and creation of the `pre-defense-1` repository tag must be completed as final administrative steps.
